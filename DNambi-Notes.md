@@ -1,17 +1,28 @@
 # DNambi's Notes - Simple_Jupyter_Dockers
 
-**Overview**
+### Overview
 
 * Goal: Simply embedding multiple docker containers in a Jupyter Notebook
 * Idea is to have working prototype by Wednesday at 5pm.
-* Teammates: Hung (UW Tacoma. Professor?, lhhunghimself@gmail.com), Sinj (sp?) - CS Master's student UW Tacoma (some language barrier), Vera (prod mgr at Nanostring), Dev, Aakash (UW grad student) - genomics work
 * [Daily Schedule](https://docs.google.com/document/d/1eAzEUwbjcgB-4Di4b4hT_w2c9kr9g3_W10VdVF6aiTE/edit)
-
-* h20.ai
-   * https://www.h2o.ai/blog/h2o-kubeflow-kubernetes-how-to/
+* [Manuscript](https://docs.google.com/document/d/1GI9TXTy8mh4kdTKMrYkxzbPwn05Yn4atgC6CVyby7vE/edit?usp=sharing)
 
 
-**Expertise**
+**Monday - February 4 Schedule**
+
+```
+
+12:30 - 1:00 -- folks head out to get lunch
+All teams return to HQ
+1:00 - 1:30: Working lunch -- teams present flowchart of project plan
+1:30 - 6:00: Pipeline building <script building>
+7:30 - 8:30: Implement any remaining code/start pipelines (remote is an option) <script building>
+```
+
+
+### People + Expertise
+
+* Teammates: Hung (UW Tacoma. Professor?, lhhunghimself@gmail.com), Sinj (sp?) - CS Master's student UW Tacoma (some language barrier), Vera (prod mgr at Nanostring), Dev, Aakash (UW grad student) - genomics work
 
 * Aakash - dry lab computational. expertise is biochem. Good at Python, Jupyter, docker occasionally, quite a bit of cloud expertise, some JS experience
 * Sinj - Master's CS student. Not much Docker or Jupyter experience. Used Python a lot. Some JS experience, not super proficient
@@ -21,16 +32,13 @@
 
 
 
-
+# Infrastructure
 
 **Key**
 
-ncbi-hackathon
-
 'dockerjupyter' user in public key
 
-
-Instructions to SSH in:
+*Instructions to SSH:*
 
 1. Download the id_rsa.txt file to a working directory
 2. Open a terminal and navigate to the directory
@@ -38,18 +46,14 @@ Instructions to SSH in:
 
 ```
 chmod 400 id_rsa.txt
-ssh -i id_rsa.txt ubuntu@54.185.156.17
-# Use 'ncbi-hackathon' as the key phrase
-```
-
-```
-chmod 400 id_rsa.txt
 ssh -i id_rsa.txt -v ubuntu@54.185.156.17
+# Use 'ncbi-hackathon' as the key phrase
 ```
 
 **Set up the Machine**
 
 https://docs.docker.com/install/linux/docker-ce/ubuntu/
+All machines have 16 cores. 
 
 ```
 sudo -i
@@ -77,6 +81,13 @@ systemctl start docker
 ```
 
 
+### Goals
+
+**Ease of Use**
+
+* Easy input and output parameters
+* Use Dockerfiles? Where are they?
+* How to define requirements? Containers to run? 
 
 **AIM**
 
@@ -88,8 +99,6 @@ systemctl start docker
 * There's a template manuscript for each team. You just need to barf out 1K words
 * Most manuscripts go to f1000 research, hybrid preprint. 2+ positive reviews and you get published in PubMed
 
-
-### Goals
 
 **Original**
 
@@ -108,51 +117,37 @@ https://github.com/nservant/HiC-Pro
 
 Have the dockerized GATK pipeline available in Jupyter notebook but without the final analysis bit integrated in.
 
+### AWS / Scaling
+
+* Kubernetes and AWS for Spark? 
 
 
-```
-Embedding of Docker Containers in Jupyter Notebooks
-Github:             Simple_Jupyter_Dockers 
-Manuscript: https://docs.google.com/document/d/1GI9TXTy8mh4kdTKMrYkxzbPwn05Yn4atgC6CVyby7vE/edit?usp=sharing
-IP: 54.185.156.17
-All machines have 16 cores. 
-```
+**Spark on Kubernetes Resources**
 
-**Monday - February 4 Schedule**
+* https://spark.apache.org/docs/2.3.0/running-on-kubernetes.html
+* https://github.com/kubernetes/examples/tree/master/staging/spark
+* https://medium.com/@toddrosner/spark-on-kubernetes-b18f16ac95ad
+* https://itnext.io/running-spark-job-on-kubernetes-minikube-958cadaddd55
 
-```
-10:00-10:30: Introductions, Administrative Announcements and Building Functional Software
-Discussion of Roles
-Lead
-Understands the science and assigns roles
-Consider using something like waffle.io for project management
-Sysadmin
-Decides where data and tools go, and implements git for versioning.
-Deals (in conjunction with technical assistance) with any technical issues (team tech lead)
-Writer
-Details both product and process for:
-Documentation 
-Manuscript
-Discussion of Output
-GitHub
-Live cloning of repos
-Docker/Singularity
-Publishing
-Journal Strategy Selection
-Advertising and social media
-RRID registration
-10:30 - 10:45: Technical considerations
-Split into teams
-10:45 - 11:00: Role assignments in teams
-11:00 - 12:30: Sysadmins and Data Acquisition get data, if necessary
-Everyone else work on first sketch of plan (one page google doc)
-12:30 - 1:00 -- folks head out to get lunch
-All teams return to HQ
-1:00 - 1:30: Working lunch -- teams present flowchart of project plan
-1:30 - 6:00: Pipeline building <script building>
-6:30 - 8:30: DINNER (on your own or with group members)
-7:30 - 8:30: Implement any remaining code/start pipelines (remote is an option) <script building>
-```
+
+
+### Running GATK on Spark
+
+* https://gatkforums.broadinstitute.org/gatk/discussion/11245/spark
+* https://software.broadinstitute.org/gatk/documentation/article?id=11245
+* https://gatkforums.broadinstitute.org/gatk/discussion/11355/which-version-of-spark-works-well-with-the-current-gatk-4-0
+* https://gatkforums.broadinstitute.org/gatk/discussion/8643/whats-the-reseaon-for-using-gatk4-bqsr-in-your-publicpairedsinglesamplewf
+* https://gatkforums.broadinstitute.org/gatk/discussion/11244/how-to-run-spark-enabled-gatk-tools-on-a-spark-cluster <- has a potentially useful youtube video
+* https://gatkforums.broadinstitute.org/gatk/discussion/10060/how-to-run-flagstatspark-on-a-cloud-spark-cluster#latest
+* https://software.broadinstitute.org/gatk/documentation/article?id=11093
+
+
+
+
+
+
+
+
 
 ### Kubernetes and Jupyter
 
@@ -162,6 +157,7 @@ All teams return to HQ
 * [JupyterHub Kubeflow](https://github.com/kubeflow/kubeflow/tree/master/components/jupyterhub)
 * [How to deploy Jupyter notebooks as components of a Kubeflow ML pipeline (Part 2)](https://towardsdatascience.com/how-to-deploy-jupyter-notebooks-as-components-of-a-kubeflow-ml-pipeline-part-2-b1df77f4e5b3)
 * [Kubeflow – Jupyter Notebook on Kubernetes](https://www.lotharschulz.info/2018/05/06/kubeflow-jupyter-notebook-on-kubernetes/)
+* [h20.ai](https://www.h2o.ai/blog/h2o-kubeflow-kubernetes-how-to/),
 
 
 # NBDocker
@@ -194,51 +190,6 @@ docker run -it -p 8888:8888 -v /var/run/docker.sock:/var/run/docker.sock -v /Use
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Resources
 
 
@@ -250,6 +201,52 @@ docker run -it -p 8888:8888 -v /var/run/docker.sock:/var/run/docker.sock -v /Use
    * [eScience article](https://escience.washington.edu/nbdocker-jupyter-docker-simplifying-reproducible-research/)
 * [Docker Spawner](https://github.com/jupyterhub/dockerspawner)
 * [Easy Build](https://fredhutch.github.io/easybuild-life-sciences/)
+* [snakemake](https://snakemake.readthedocs.io/en/stable/)
+* [My Binder - turn GitHub repos into Docker containers](https://mybinder.org/)
+
+* [JupyterHub Spawners](https://github.com/jupyterhub/jupyterhub/wiki/Spawners)
+   * [DockerSpawner](https://github.com/jupyterhub/dockerspawner)
+   * [FargateSpawner](https://github.com/uktrade/fargatespawner)
+   * [Kubespawner](https://github.com/jupyterhub/kubespawner) and its [ReadTheDocs](https://jupyterhub-kubespawner.readthedocs.io/en/latest/)
+* [Zero to JupyterHub on Kubernetes](https://zero-to-jupyterhub.readthedocs.io/en/latest/)
+
+
+* https://schd.ws/hosted_files/gccbosc2018/32/GATK4%20Workshop%20handout%20-%20GCCBOSC%202018.pdf
+
+
+
+
+
+
+
+
+
+
+
+
+#### Running Spark on K8S
+
+* https://spark.apache.org/docs/2.3.1/running-on-kubernetes.html
+* https://testdriven.io/blog/deploying-spark-on-kubernetes/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ### Docker Containers for Jupyter
