@@ -1,10 +1,11 @@
 # SimpleVariantCaller
 Simply embedding multiple docker containers in a Jupyter Notebook to create a standalone variant calliing pipeline.
 # Installation
-You will need to download: 
-Python 3.6
-Docker
-Jupyter notebook via pip
+You will need to download: <br>
+1. Python 3.6
+2. Docker
+3. Jupyter notebook via pip
+4. nbdocker
 
 # Usage
 [how will a user run this - sample code]
