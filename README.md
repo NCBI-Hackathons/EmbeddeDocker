@@ -1,7 +1,12 @@
 # SimpleVariantCaller
-Simply embedding multiple docker containers in a Jupyter Notebook
-## Motivation
-Jupyter notebook is used to create a standalone and adaptable interface for launcing a variant calling pipeline that uses Docker, AWS and Spark were used to create a standalone FASTQ to VCF and visualizations for variant calling to make a generic, easy to deploy and distributed workflow.
+Simply embedding multiple docker containers in a Jupyter Notebook to create a standalone variant calliing pipeline.
+# Installation
+
+# Usage
+[how will a user run this - sample code]
+
+# Example
+
 
 # Containers per pipeline:
 | #        | Variant Calling           | Hi-C  |
