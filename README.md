@@ -5,11 +5,12 @@ You will need to download: <br>
 1. Python 3.6
 2. Docker
 3. Jupyter notebook via pip
-# Embedded Features
+# Embedded Containers
 1. nbdocker
 2. GATK4
 3. BWA
-4. IGV extension for Jupyter Notebooks
+# Notebook Tools for visualization
+1. IGV extension for Jupyter Notebooks
 
 # Usage
 [how will a user run this - sample code]
@@ -23,14 +24,8 @@ You will need to download: <br>
 # Example
 
 
-# Containers per pipeline:
-| #        | Variant Calling           | Hi-C  |
-| ------------- |:-------------:| -----:|
-| 1      | BWA-MEM | BOW-TIE |
-| 2      | GATK      |   SAMTOOLS |
-| 3      | GATK4     |     |
-
-<i> GATK4 will be implemented using Spark on Kubernetes </i>
+# Future Directions
+We will continue to expand the containers that we support to add variety to the alignment, variant calling and visualizations. Please submit requests through the issues tab. 
 
 ## Resources
 nbdocker <br>
