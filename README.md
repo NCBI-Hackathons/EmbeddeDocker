@@ -5,7 +5,11 @@ You will need to download: <br>
 1. Python 3.6
 2. Docker
 3. Jupyter notebook via pip
-4. nbdocker
+# Embedded Features
+1. nbdocker
+2. GATK4
+3. BWA
+4. IGV extension for Jupyter Notebooks
 
 # Usage
 [how will a user run this - sample code]
