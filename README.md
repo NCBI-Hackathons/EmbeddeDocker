@@ -12,19 +12,15 @@ You will need to download: <br>
 # Notebook Tools for visualization
 1. IGV extension for Jupyter Notebooks
 
-# Example Notebook Visualization
+# Notebook Example
+<img src="https://github.com/NCBI-Hackathons/Simple_Jupyter_Dockers/blob/master/notebook.png" title="drawing" width="500"/> 
 <img src="https://github.com/NCBI-Hackathons/Simple_Jupyter_Dockers/blob/master/Fig2.PNG" title="drawing" width="500"/>
 
 # Usage
 [how will a user run this - sample code]
 
-# Workflow
-<img src="https://github.com/NCBI-Hackathons/Simple_Jupyter_Dockers/blob/master/notebook.png" title="drawing" width="500"/> 
-<br>
+# Variant Calling Notebook Workflow 
 <img src="https://github.com/NCBI-Hackathons/Simple_Jupyter_Dockers/blob/master/Fig1.PNG" title="drawing" width="500"/>
-
-# Example
-
 
 # Future Directions
 We will continue to expand the containers that we support to add variety to the alignment, variant calling and visualizations. Please submit requests through the issues tab. Include support for Chromatin interaction (Hi-C) workflows. 
@@ -36,6 +32,6 @@ variant calling <br>
 https://github.com/gencorefacility/variant-calling-pipeline <br>
 Chromatin Interaction (Hi-C) <br>
 https://github.com/nservant/HiC-Pro
-IGV.JS <br>
+IGV visualization <br>
 https://github.com/igvteam/igv.js-jupyter
 
