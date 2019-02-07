@@ -31,7 +31,7 @@ https://hub.docker.com/r/biodepot/nbdocker/ <br>
 variant calling <br>
 https://github.com/gencorefacility/variant-calling-pipeline <br>
 Chromatin Interaction (Hi-C) <br>
-https://github.com/nservant/HiC-Pro
+https://github.com/nservant/HiC-Pro <br>
 IGV visualization <br>
 https://github.com/igvteam/igv.js-jupyter
 
