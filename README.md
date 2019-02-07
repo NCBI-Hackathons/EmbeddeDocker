@@ -22,7 +22,6 @@ You will need to download: <br>
 # Variant Calling Notebook Workflow 
 <img src="https://github.com/NCBI-Hackathons/Simple_Jupyter_Dockers/blob/master/Fig1.PNG" title="drawing" width="500"/>
 
-<<<<<<< HEAD
 ## Step 1: Sample Data
 We used HG0479 from the high coverage Han Chinese cohort in the 1000 genomes project and utilize the first 1 million reads from sequencing run ERR1044750. 
 
@@ -40,7 +39,6 @@ We use the popular variant caller GATK to ingest BAM files and produce VCF varia
 
 
 =======
->>>>>>> be984c6664370b3007a2debbe1a6059f7678813a
 # Future Directions
 We will continue to expand the containers that we support to add variety to the alignment, variant calling and visualizations. Please submit requests through the issues tab. Include support for Chromatin interaction (Hi-C) workflows. 
 
