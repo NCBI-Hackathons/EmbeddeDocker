@@ -13,14 +13,14 @@ You will need to download: <br>
 1. IGV extension for Jupyter Notebooks
 
 # Notebook Example
-<img src="https://github.com/NCBI-Hackathons/Simple_Jupyter_Dockers/blob/master/notebook.png" title="drawing" width="500"/> 
-<img src="https://github.com/NCBI-Hackathons/Simple_Jupyter_Dockers/blob/master/Fig2.PNG" title="drawing" width="500"/>
+<img src="https://github.com/NCBI-Hackathons/EmbeddeDocker/blob/master/figures/notebook.png" title="drawing" width="500"/> 
+<img src="https://github.com/NCBI-Hackathons/EmbeddeDocker/blob/master/figures/Fig2.PNG" title="drawing" width="500"/>
 
 # Usage
 [how will a user run this - sample code]
 
 # Variant Calling Notebook Workflow 
-<img src="https://github.com/NCBI-Hackathons/Simple_Jupyter_Dockers/blob/master/Fig1.PNG" title="drawing" width="500"/>
+<img src="https://github.com/NCBI-Hackathons/EmbeddeDocker/blob/master/figures/Fig1.PNG" title="drawing" width="500"/>
 
 ## Step 1: Sample Data
 We used HG0479 from the high coverage Han Chinese cohort in the 1000 genomes project and utilize the first 1 million reads from sequencing run ERR1044750. 
@@ -32,7 +32,7 @@ BWA is a short read aligner which we use to align reads and produce SAM files. T
 We use the popular variant caller GATK to ingest BAM files and produce VCF variant files. In addition to running GATK in a vanilla container, we are able to run the Broad's Spark GATK container. 
 
 # Example Notebook Visualization
-<img src="https://github.com/NCBI-Hackathons/Simple_Jupyter_Dockers/blob/master/Fig2.PNG" title="drawing" width="500"/>
+<img src="https://github.com/NCBI-Hackathons/EmbeddeDocker/blob/master/figures/Fig2.PNG" title="drawing" width="500"/>
 
 
 # Example
