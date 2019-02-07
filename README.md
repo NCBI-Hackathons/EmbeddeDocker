@@ -34,3 +34,6 @@ variant calling <br>
 https://github.com/gencorefacility/variant-calling-pipeline <br>
 Chromatin Interaction (Hi-C) <br>
 https://github.com/nservant/HiC-Pro
+IGV.JS
+https://github.com/igvteam/igv.js-jupyter
+
