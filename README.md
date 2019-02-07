@@ -14,7 +14,6 @@ You will need to download: <br>
 
 # Notebook Example
 <img src="https://github.com/NCBI-Hackathons/EmbeddeDocker/blob/master/figures/notebook.png" title="drawing" width="500"/> 
-<img src="https://github.com/NCBI-Hackathons/EmbeddeDocker/blob/master/figures/Fig2.PNG" title="drawing" width="500"/>
 
 # Usage
 [how will a user run this - sample code]
