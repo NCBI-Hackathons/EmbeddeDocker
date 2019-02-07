@@ -25,7 +25,7 @@ You will need to download: <br>
 
 
 # Future Directions
-We will continue to expand the containers that we support to add variety to the alignment, variant calling and visualizations. Please submit requests through the issues tab. 
+We will continue to expand the containers that we support to add variety to the alignment, variant calling and visualizations. Please submit requests through the issues tab. Include support for Chromatin interaction (Hi-C) workflows. 
 
 ## Resources
 nbdocker <br>
