@@ -19,7 +19,7 @@ You will need to download: <br>
 [how will a user run this - sample code]
 
 # Workflow
-<img src="https://github.com/NCBI-Hackathons/Simple_Jupyter_Dockers/blob/master/notebook.PNG" title="drawing" width="500"/> 
+<img src="https://github.com/NCBI-Hackathons/Simple_Jupyter_Dockers/blob/master/notebook.png" title="drawing" width="500"/> 
 <br>
 <img src="https://github.com/NCBI-Hackathons/Simple_Jupyter_Dockers/blob/master/Fig1.PNG" title="drawing" width="500"/>
 
